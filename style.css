@@ -1,0 +1,32 @@
+.game {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+	align-content: space-between;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+}
+.question {
+	width: 100%;
+	margin: 5px;
+	font-size: 16px;
+}
+.button {
+	font-size: 16px;
+}
+#filmlist {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.answer {
+	box-sizing: border-box;
+	width: 30%;
+	height: 100%;
+	font-size: 16px;
+	flex-wrap: nowrap;
+}
+#movies {
+	margin-top: 5px;
+}
