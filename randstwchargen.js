@@ -5,7 +5,7 @@ playButton.addEventListener("click", () => {
 	let home = document.getElementById("Home");
 	let movies = document.getElementById("movies");
 	var people = {};
-	var homeworld = {};
+	var homeWorld = {};
 	var films = {};
 	function getRndInteger(min, max) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -17,11 +17,12 @@ playButton.addEventListener("click", () => {
 		.then((data) => {
 			people = data;
 			name.innerHTML = people.name;
+			console.log(people);
 			fetch(people.homeworld)
 				.then((Response) => Response.json())
 				.then((data) => {
-					homeworld = data;
-					home.innerHTML = homeworld.name;
+					homeWorld = data;
+					home.innerHTML = homeWorld.name;
 				});
 			const orderedFilms = document.getElementById("movies");
 			orderedFilms.innerHTML = "<ul id='filmlist'></ul>";
